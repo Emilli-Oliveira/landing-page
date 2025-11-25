@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    flex-direction: column;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+      min-height: 100vh;
+    
+}
+ 
+ main {
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    margin: 0; 
+    max-width: 400px;
+    padding: 20px;
+    flex: 1
+ }
+
+
+
+.logo {
+    filter: drop-shadow(3px 2px 3px #808080);
+    width: 400px;
+    height: 380px;
+text-align: center;
+margin-bottom:-30px;}
+
+ .links a {
+    display: block;
+    background: #c5ad7b;
+    text-decoration: none;
+    border-color: 2px solid #c5ad7b;
+    box-shadow: 6px 6px 6px #3b3b48;
+    color: black;
+    background: linear-gradient(90deg, #c5ad7b 0%, #f0e2c2 100%);
+    padding: 12px 20px;
+    margin:10px 0;
+     width: 350px;
+    border-radius: 8px;
+    text-align: center;    
+}
+   
+ 
+footer { 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   align-items: center;
+    background-color: #c5ad7b;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(90deg, #c5ad7b 0%, #f0e2c2 100%);
+    padding: 12px 20px;
+    flex-wrap: wrap;
+    gap:8px
+}
+    
+footer a {
+    display: inline-flex;
+    align-items: center;
+    gap:5px;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(12px, 2.5vw, 16px);
+    text-decoration: none;
+    color: black;
+
+   
+}
+.marcador {
+    width: clamp(16px, 2vw, 20px);
+    gap: 5px;
+    margin-bottom: 5px; 
+    flex-shrink: 0;
+    
+
+    
+    
+
+}
+@media screen and (max-width: 360px){
+    footer a {
+        font-size: 14px;
+    gap: 4px;
+}
